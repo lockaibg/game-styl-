@@ -1,11 +1,12 @@
 //codage des déplacements
-if keyboard_check(vk_left)
+image_angle = point_direction(x,y,mouse_x,mouse_y);
+if keyboard_check(ord("Q"))
 	if(x !=mouse_x || y != mouse_y)
 	{
 		x = x - get_x(image_angle)*vitesse;
 		y = y - get_y(image_angle)*vitesse;
 	}
-if keyboard_check(vk_right)
+if keyboard_check(ord("D"))
 {
 	if(x !=mouse_x || y != mouse_y)
 	{
@@ -16,35 +17,50 @@ if keyboard_check(vk_right)
 
 	
 //changement de vitesse via shift
-if keyboard_check(vk_shift)
-{
-	if vitesse == vitesse_ini
-		vitesse = vitesse_boost;
+if(obj_energy_barre._sprite_array[5] != obj_energy_barre.sprite_index){
+	if keyboard_check(vk_shift)
+	{
+	
+			vitesse = vitesse_boost;
+	}
 	else
-		vitesse = vitesse_ini;
-}	
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+	{
+		vitesse = vitesse_ini;	
+	}
+}
+else
+{
+	vitesse = vitesse_ini;	
+}
+
 if mouse_check_button_pressed(mb_left)
 {
 	instance_create_layer(x,y,"Instances",obj_bullet);
 }
+//apparition des énemies
 if(rand == 100)
 {
-	rand = irandom(1000);
+	
+	rand_x = irandom(1000);
+	rand_y = irandom(1000);
+	while (rand_x+rand_y < 1000){
+		rand_x = irandom(1000);
+		rand_y = irandom(1000);
+	}
 	rand_pos = irandom(4);
 	switch(rand_pos)
 	{
 		case 1:
-			instance_create_layer(x+rand,y+rand,"Instances",obj_enemy1);
+			instance_create_layer(x+rand_x,y+rand_y,"Instances",obj_enemy1);
 			break;
 		case 2:
-			instance_create_layer(x+rand,y-rand,"Instances",obj_enemy1);
+			instance_create_layer(x+rand_x,y-rand_y,"Instances",obj_enemy1);
 			break;
 		case 3:
-			instance_create_layer(x-rand,y-rand,"Instances",obj_enemy1);
+			instance_create_layer(x-rand_x,y-rand_y,"Instances",obj_enemy1);
 			break;
 		case 4:
-			instance_create_layer(x-rand,y+rand,"Instances",obj_enemy1);
+			instance_create_layer(x-rand_x,y+rand_y,"Instances",obj_enemy1);
 			break;
 	}
 }
