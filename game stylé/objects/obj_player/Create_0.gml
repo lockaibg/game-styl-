@@ -2,7 +2,8 @@
 vitesse_ini = 4;
 vitesse = vitesse_ini;
 vitesse_boost = 7;
-
+rand = 100;
+rand_pos = 0;
 function get_x(x){
 	var retourner;
 	if(90 >= x)
