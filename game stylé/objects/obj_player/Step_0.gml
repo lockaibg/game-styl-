@@ -15,7 +15,6 @@ if keyboard_check(ord("D"))
 	}
 }
 
-	
 //changement de vitesse via shift
 if(obj_energy_barre._sprite_array[5] != obj_energy_barre.sprite_index){
 	if keyboard_check(vk_shift)
@@ -33,10 +32,12 @@ else
 	vitesse = vitesse_ini;	
 }
 
+//tire de munitions
 if mouse_check_button_pressed(mb_left)
 {
 	instance_create_layer(x,y,"Instances",obj_bullet);
 }
+
 //apparition des énemies
 if(rand == 100)
 {
@@ -65,3 +66,8 @@ if(rand == 100)
 	}
 }
 rand = irandom(100);
+
+//victoire
+if (kill == 20) {
+	room_goto(victoire);
+}

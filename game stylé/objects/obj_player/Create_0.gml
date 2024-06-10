@@ -6,6 +6,7 @@ rand = 100;
 rand_pos = 0;
 rand_y = 0;
 rand_x = 0;
+kill = 0;
 function get_x(x){
 	var _retourner;
 	if(90 >= x)
