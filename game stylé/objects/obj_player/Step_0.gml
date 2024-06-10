@@ -41,7 +41,13 @@ if mouse_check_button_pressed(mb_left)
 //apparition des énemies
 if(rand == 100)
 {
-	
+	if(irandom(2) = 0){
+		enemy = obj_enemy2;
+	}
+	else
+	{	
+		enemy = obj_enemy1;
+	}
 	rand_x = irandom(1000);
 	rand_y = irandom(1000);
 	while (rand_x+rand_y < 1000){
@@ -52,16 +58,16 @@ if(rand == 100)
 	switch(rand_pos)
 	{
 		case 1:
-			instance_create_layer(x+rand_x,y+rand_y,"Instances",obj_enemy1);
+			instance_create_layer(x+rand_x,y+rand_y,"Instances",enemy);
 			break;
 		case 2:
-			instance_create_layer(x+rand_x,y-rand_y,"Instances",obj_enemy1);
+			instance_create_layer(x+rand_x,y-rand_y,"Instances",enemy);
 			break;
 		case 3:
-			instance_create_layer(x-rand_x,y-rand_y,"Instances",obj_enemy1);
+			instance_create_layer(x-rand_x,y-rand_y,"Instances",enemy);
 			break;
 		case 4:
-			instance_create_layer(x-rand_x,y+rand_y,"Instances",obj_enemy1);
+			instance_create_layer(x-rand_x,y+rand_y,"Instances",enemy);
 			break;
 	}
 }
