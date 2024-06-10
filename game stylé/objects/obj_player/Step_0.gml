@@ -39,7 +39,7 @@ if mouse_check_button_pressed(mb_left)
 }
 
 //apparition des énemies
-if(rand == 100)
+if(rand == 60)
 {
 	if(irandom(2) = 0){
 		enemy = obj_enemy2;
@@ -71,7 +71,7 @@ if(rand == 100)
 			break;
 	}
 }
-rand = irandom(100);
+rand = irandom(60);
 
 //victoire
 if (kill == 20) {
