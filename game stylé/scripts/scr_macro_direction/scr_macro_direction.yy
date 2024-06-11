@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_macro_direction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_macro_direction",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
