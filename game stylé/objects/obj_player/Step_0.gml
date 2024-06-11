@@ -1,19 +1,8 @@
 //codage des déplacements
 image_angle = point_direction(x,y,mouse_x,mouse_y);
-if keyboard_check(ord("Q"))
-	if(x !=mouse_x || y != mouse_y)
-	{
-		x = x - get_x(image_angle)*vitesse;
-		y = y - get_y(image_angle)*vitesse;
-	}
-if keyboard_check(ord("D"))
-{
-	if(x !=mouse_x || y != mouse_y)
-	{
-		x = x + get_x(image_angle)*vitesse;
-		y = y + get_y(image_angle)*vitesse;
-	}
-}
+
+x = x + get_x(image_angle)*vitesse;
+y = y + get_y(image_angle)*vitesse;
 
 //changement de vitesse via shift
 if(obj_energy_barre._sprite_array[5] != obj_energy_barre.sprite_index){
@@ -32,7 +21,7 @@ else
 	vitesse = vitesse_ini;	
 }
 
-//tire de munitions
+//tirer des munitions
 if mouse_check_button_pressed(mb_left)
 {
 	instance_create_layer(x,y,"Instances",obj_bullet);
@@ -74,6 +63,6 @@ if(rand == 60)
 rand = irandom(60);
 
 //victoire
-if (kill == 20) {
-	room_goto(victoire);
+if (kill == 2) {
+	room_goto(rm_victoire);
 }

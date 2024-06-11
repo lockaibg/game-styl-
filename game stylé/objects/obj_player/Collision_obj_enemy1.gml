@@ -1,1 +1,1 @@
-room_goto(gameover);
+room_goto(rm_gameover);

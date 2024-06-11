@@ -1,16 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_energy_barre",
+  "%Name":"obj_parent_button",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_energy_barre",
+  "name":"obj_parent_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"other element",
-    "path":"folders/Objets/other element.yy",
+    "name":"button",
+    "path":"folders/Objets/button.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_energy1",
-    "path":"sprites/spr_energy1/spr_energy1.yy",
+    "name":"spr_next_button1",
+    "path":"sprites/spr_next_button1/spr_next_button1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -24,7 +24,7 @@ else
 	}
 }
 
-if sprite_index == Sprite5_5{
+if sprite_index == spr_energy6{
     energy = false;
 	
 }
