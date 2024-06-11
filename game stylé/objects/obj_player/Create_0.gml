@@ -1,3 +1,5 @@
+depth = -10;
+
 vitesse = 2;
 
 last = DOWN;
