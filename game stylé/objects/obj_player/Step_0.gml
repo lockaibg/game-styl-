@@ -63,6 +63,6 @@ if(rand == 60)
 rand = irandom(60);
 
 //victoire
-if (kill == 2) {
+if (kill == 10) {
 	room_goto(rm_victoire);
 }
