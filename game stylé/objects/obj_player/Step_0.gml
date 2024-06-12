@@ -66,11 +66,21 @@ if( _id_collision)
 {
 	if(asset_has_tags(_id_collision.object_index,"dmg"))
 	{
-		for(var _i = instance_number(obj_heart);_i > 0; _i--)
+		for(var _i = instance_number(obj_heart);_i >= 0; _i--)
 		{
-			if instance_find(obj_heart, _i-1).sprite_index == spr_heart
+			var _array_heart = 0;
+			for(var _j = instance_number(obj_heart);_j > 0; _j--)
 			{
-				instance_find(obj_heart, _i-1).sprite_index = spr_heart_dmgd;
+				if(instance_find(obj_heart, _j-1).myself == _i)
+				{
+					_array_heart = instance_find(obj_heart, _j-1);
+				}
+			}
+			show_debug_message(_i);
+			if (_array_heart.sprite_index == spr_heart)
+			{
+				show_debug_message(_i);
+				_array_heart.sprite_index = spr_heart_dmgd;
 				instance_destroy(_id_collision);
 				break;
 			}
