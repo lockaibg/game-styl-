@@ -2,6 +2,10 @@ depth = -10;
 
 vitesse = 2;
 
+hitting = 0;
+count = 0;
+space_holded = false;
+
 last = DOWN;
 
 sprite[RIGHT] = spr_player_running_right;
