@@ -35,7 +35,8 @@ if (keyboard_check(ord("Q"))){
 	}
 	
 }
-
+	
+//idle
 if(!keyboard_check(ord("Q")) && !keyboard_check(ord("D")) && !keyboard_check(ord("Z")) && !keyboard_check(ord("S"))){
 	switch(last)
 	{
@@ -54,4 +55,26 @@ if(!keyboard_check(ord("Q")) && !keyboard_check(ord("D")) && !keyboard_check(ord
 	}
 }
 
+//combat
 
+//dégats
+var _id_collision = instance_place(x,y,all)
+if( _id_collision)
+{
+	if(asset_has_tags(_id_collision.object_index,"dmg"))
+	{
+		for(var _i = instance_number(obj_heart);_i > 0; _i--)
+		{
+			show_debug_message(_i);
+			if instance_find(obj_heart, _i-1).sprite_index == spr_heart
+			{
+				instance_find(obj_heart, _i-1).sprite_index = spr_heart_dmgd;
+				instance_destroy(_id_collision);
+				break;
+			}
+		}
+
+	}
+}
+
+//gameover
