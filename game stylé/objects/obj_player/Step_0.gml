@@ -3,7 +3,7 @@
 if(hitting == 0)
 {
 	if (keyboard_check(ord("Z"))){
-		if (place_meeting(x, y-vitesse, obj_wall) != true)
+		if (place_meeting(x, y-vitesse, obj_wall) != true && place_meeting(x, y-vitesse, obj_pnj_tuto) != true)
 		{
 			sprite_index = sprite[UP];
 			y = y - vitesse;
@@ -12,7 +12,7 @@ if(hitting == 0)
 	
 	}
 	if (keyboard_check(ord("S"))){
-		if (place_meeting(x, y+vitesse, obj_wall) != true)
+		if (place_meeting(x, y+vitesse, obj_wall) != true && place_meeting(x, y+vitesse, obj_pnj_tuto) != true)
 		{
 			sprite_index = sprite[DOWN];
 			y = y + vitesse;
@@ -21,7 +21,7 @@ if(hitting == 0)
 	
 	}
 	if (keyboard_check(ord("D"))){
-		if (place_meeting(x+vitesse, y, obj_wall) != true)
+		if (place_meeting(x+vitesse, y, obj_wall) != true && place_meeting(x+vitesse, y, obj_pnj_tuto) != true)
 		{
 			sprite_index = sprite[RIGHT];
 			x = x + vitesse;
@@ -29,7 +29,7 @@ if(hitting == 0)
 		}
 	}
 	if (keyboard_check(ord("Q"))){
-		if (place_meeting(x-vitesse, y, obj_wall) != true)
+		if (place_meeting(x-vitesse, y, obj_wall) != true && place_meeting(x-vitesse, y, obj_pnj_tuto) != true)
 		{
 			sprite_index = sprite[LEFT];
 			x = x - vitesse;
@@ -68,7 +68,6 @@ if( _id_collision)
 	{
 		for(var _i = instance_number(obj_heart);_i > 0; _i--)
 		{
-			show_debug_message(_i);
 			if instance_find(obj_heart, _i-1).sprite_index == spr_heart
 			{
 				instance_find(obj_heart, _i-1).sprite_index = spr_heart_dmgd;
