@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pnj_tuto",
+  "%Name":"obj_guez_E",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pnj_tuto",
+  "name":"obj_guez_E",
   "overriddenProperties":[],
   "parent":{
-    "name":"pnj",
-    "path":"folders/Objets/pnj.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pnj_tuto",
-    "path":"sprites/spr_pnj_tuto/spr_pnj_tuto.yy",
+    "name":"Sprite28",
+    "path":"sprites/Sprite28/Sprite28.yy",
   },
   "spriteMaskId":null,
   "visible":true,

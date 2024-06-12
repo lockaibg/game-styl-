@@ -17,6 +17,7 @@ sprite[LEFT_IDLE] = spr_player_idle_left
 sprite[UP_IDLE] = spr_player_idle_up;
 sprite[DOWN_IDLE] = spr_player_idle;
 
+pnj[0] = obj_pnj_tuto;
 
 instance_create_layer(x, y, "Instances",obj_heart);
 instance_create_layer(x, y, "Instances",obj_heart);

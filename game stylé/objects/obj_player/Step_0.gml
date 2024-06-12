@@ -76,10 +76,8 @@ if( _id_collision)
 					_array_heart = instance_find(obj_heart, _j-1);
 				}
 			}
-			show_debug_message(_i);
 			if (_array_heart.sprite_index == spr_heart)
 			{
-				show_debug_message(_i);
 				_array_heart.sprite_index = spr_heart_dmgd;
 				instance_destroy(_id_collision);
 				break;
@@ -140,4 +138,23 @@ if(hitting == 2)
 		count = 0;
 	}
 }
-//gameover
+
+//pnj
+
+if(keyboard_check(ord("E")))
+{
+	for(var i = 0; i < array_length(pnj); i++)
+	{
+		if(instance_exists(pnj[i]))
+		{
+			if(pnj[i].proximite = true)
+			{
+				if(pnj[i].interaction < 1)
+				{
+					instance_create_layer(x,y,  "Instances", obj_heart);
+					pnj[i].interaction++;
+				}
+			}
+		}
+	}
+}
