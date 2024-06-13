@@ -562,3 +562,11 @@ function print_text(_txt){
 		}
 	}
 }
+
+function destroy_text(){
+	instance_destroy(obj_bg_text)
+	for(var i = instance_number(obj_alphabet); i >= 0; i--)
+	{
+		instance_destroy(instance_find(obj_alphabet, i));
+	}
+}

@@ -149,13 +149,18 @@ if(keyboard_check(ord("E")))
 		{
 			if(pnj[i].proximite = true)
 			{
-				if(pnj[i].interaction < 1)
-				{
-					instance_create_layer(x,y,  "Instances", obj_heart);
-					pnj[i].clicked = true;
-					pnj[i].interaction++;
-				}
+				current_pnj_exist = true;
+				last_pnj = pnj[i];
+				pnj[i].clicked = true;
 			}
 		}
+	}
+}
+
+if(keyboard_check_released(ord("E")))
+{
+	if(current_pnj_exist)
+	{
+		last_pnj.released = true;
 	}
 }
