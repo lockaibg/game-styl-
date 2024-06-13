@@ -5,6 +5,7 @@ vitesse = 2;
 hitting = 0;
 count = 0;
 space_holded = false;
+killed = 0;
 
 last = DOWN;
 
@@ -18,6 +19,7 @@ sprite[UP_IDLE] = spr_player_idle_up;
 sprite[DOWN_IDLE] = spr_player_idle;
 
 pnj[0] = obj_pnj_tuto;
+pnj[1] = obj_pnj_tuto_2;
 last_pnj = obj_pnj_tuto;
 current_pnj_exist = false;
 

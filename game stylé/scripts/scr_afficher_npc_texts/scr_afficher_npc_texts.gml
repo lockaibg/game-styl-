@@ -49,7 +49,7 @@ function print_text(_txt) {
             var char = string_char_at(word, k);
             if (ds_map_exists(char_to_sprite, char)) {
                 switch (char) {
-                    case "f": case "i": case ".": case ":": case "!": case "'": case ",": 
+                    case "i": case ".": case ":": case "!": case "'": case ",": 
                         word_length += 4;
                         break;
                     case "j": case "y":
@@ -61,13 +61,13 @@ function print_text(_txt) {
                     case "m":
                         word_length += 18;
                         break;
-                    case "w":
+                    case "w": 
                         word_length += 15;
                         break;
-                    case "v": case "s": case "h":
+                    case "v": case "s": case "h": 
                         word_length += 9;
                         break;
-                    case "t": case "(": case ")": case "\"":
+                    case "t": case "(": case ")": case "\"": case "f": 
                         word_length += 7;
                         break;
                     case "u": case "r":
@@ -101,7 +101,7 @@ function print_text(_txt) {
                 _instance.letter = sprite;
 
                 switch (char) {
-                    case "f": case "i": case ".": case ":": case "!": case "'": case ",": 
+                    case "i": case ".": case ":": case "!": case "'": case ",": 
                         coord_x += 4;
                         break;
                     case "j": case "y": 
@@ -121,7 +121,7 @@ function print_text(_txt) {
                     case "v": case "s": case "h": 
                         coord_x += 9;
                         break;
-                    case "t": case "(": case ")": case "\"":
+                    case "t": case "(": case ")": case "\"": case "f": 
                         coord_x += 7;
                         break;
                     case "u": case "r":
@@ -141,8 +141,7 @@ function print_text(_txt) {
     }
 }
 
-
-function destroy_text(){
+function destroy_text() {
 	instance_destroy(obj_bg_text)
 	for(var i = instance_number(obj_alphabet); i >= 0; i--)
 	{

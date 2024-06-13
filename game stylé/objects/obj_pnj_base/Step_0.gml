@@ -21,11 +21,9 @@ if(instance_find(obj_player, 0).x)
 //code de l'intéraction
 if(released == true)
 {
-	show_debug_message(interaction);
 	
 	if(clicked == true)
 	{
-		show_debug_message(interaction);
 		if(interaction == 1)
 		{
 			

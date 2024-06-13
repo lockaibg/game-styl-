@@ -143,12 +143,15 @@ if(hitting == 2)
 
 if(keyboard_check(ord("E")))
 {
+	show_debug_message("n");
 	for(var i = 0; i < array_length(pnj); i++)
 	{
 		if(instance_exists(pnj[i]))
 		{
+			show_debug_message("i");
 			if(pnj[i].proximite = true)
 			{
+				show_debug_message("g");
 				current_pnj_exist = true;
 				last_pnj = pnj[i];
 				pnj[i].clicked = true;
