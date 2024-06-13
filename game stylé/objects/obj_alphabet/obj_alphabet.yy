@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_alphabet",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_alphabet",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite30",
-    "path":"sprites/Sprite30/Sprite30.yy",
+    "name":"spr_alphabet_g",
+    "path":"sprites/spr_alphabet_g/spr_alphabet_g.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -22,6 +22,6 @@ if(instance_find(obj_player, 0).x)
 if(clicked == true)
 {
 	show_debug_message("ngwhat");
-	print_text("abc");
+	print_text("bienvenu voyageur, je suis odia et je suis la pour t'aider a trouver ton chemin dans ce monde (caca)");
 	clicked = false;	
 }
