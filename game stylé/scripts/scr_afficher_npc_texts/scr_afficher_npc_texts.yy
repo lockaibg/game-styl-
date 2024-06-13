@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"scr_fn_txt",
+  "%Name":"scr_afficher_npc_texts",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_fn_txt",
+  "name":"scr_afficher_npc_texts",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

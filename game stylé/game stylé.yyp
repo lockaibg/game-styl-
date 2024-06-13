@@ -59,7 +59,7 @@
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"rm_room_base1","path":"rooms/rm_room_base1/rm_room_base1.yy",},},
     {"id":{"name":"rm_room_extern","path":"rooms/rm_room_extern/rm_room_extern.yy",},},
-    {"id":{"name":"scr_fn_txt","path":"scripts/scr_fn_txt/scr_fn_txt.yy",},},
+    {"id":{"name":"scr_afficher_npc_texts","path":"scripts/scr_afficher_npc_texts/scr_afficher_npc_texts.yy",},},
     {"id":{"name":"scr_macro_direction","path":"scripts/scr_macro_direction/scr_macro_direction.yy",},},
     {"id":{"name":"spr_alphabet_a","path":"sprites/spr_alphabet_a/spr_alphabet_a.yy",},},
     {"id":{"name":"spr_alphabet_b","path":"sprites/spr_alphabet_b/spr_alphabet_b.yy",},},

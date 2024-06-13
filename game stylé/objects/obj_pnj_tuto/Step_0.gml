@@ -28,14 +28,19 @@ if(released == true)
 		show_debug_message(interaction);
 		if(interaction == 1)
 		{
-			print_text("bienvenu voyageur, je suis odia et je suis la pour t'aider a trouver ton chemin dans ce monde (caca)");
+			print_text("bienvenu voyageur, je suis odia et je suis la pour t'aider a trouver ton chemin dans ce monde");
 		}
 		else if(interaction == 2)
 		{
 			destroy_text();
-			print_text("tu pourrais commencer par tuer ces monstres utilise \'espace\' pour attaquer !");
+			print_text("je vois que tu as deja appris a bouger avec zqsd, je vais t'apprendre comment te battre !");
 		}
 		else if(interaction == 3)
+		{
+			destroy_text();
+			print_text("tu pourrais commencer par tuer ces monstres utilise \'espace\' pour attaquer !");
+		}
+		else if(interaction == 4)
 		{
 			destroy_text();
 			obj_player.current_pnj_exist = false;
