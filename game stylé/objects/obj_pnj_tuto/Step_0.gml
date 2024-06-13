@@ -1,4 +1,4 @@
-
+//détection de la proximité
 if(instance_find(obj_player, 0).x)
 {
 	if( sqrt(power(x - instance_find(obj_player, 0).x,2) + power(y - instance_find(obj_player, 0).y,2)) < 30) {
@@ -16,4 +16,12 @@ if(instance_find(obj_player, 0).x)
 		}
 		proximite = false;
 	}
+}
+
+//code de l'intéraction
+if(clicked == true)
+{
+	show_debug_message("ngwhat");
+	print_text("abc");
+	clicked = false;	
 }

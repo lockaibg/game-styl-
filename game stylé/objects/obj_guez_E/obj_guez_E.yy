@@ -8,8 +8,8 @@
   "name":"obj_guez_E",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objets",
-    "path":"folders/Objets.yy",
+    "name":"pnj",
+    "path":"folders/Objets/pnj.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite28",
-    "path":"sprites/Sprite28/Sprite28.yy",
+    "name":"spr_guez_e",
+    "path":"sprites/spr_guez_e/spr_guez_e.yy",
   },
   "spriteMaskId":null,
   "visible":true,

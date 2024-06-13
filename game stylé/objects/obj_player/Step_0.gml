@@ -66,7 +66,7 @@ if( _id_collision)
 {
 	if(asset_has_tags(_id_collision.object_index,"dmg"))
 	{
-		for(var _i = instance_number(obj_heart);_i >= 0; _i--)
+		for(var _i = instance_number(obj_heart);_i > 0; _i--)
 		{
 			var _array_heart = 0;
 			for(var _j = instance_number(obj_heart);_j > 0; _j--)
@@ -152,6 +152,7 @@ if(keyboard_check(ord("E")))
 				if(pnj[i].interaction < 1)
 				{
 					instance_create_layer(x,y,  "Instances", obj_heart);
+					pnj[i].clicked = true;
 					pnj[i].interaction++;
 				}
 			}
